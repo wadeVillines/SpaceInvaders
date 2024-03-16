@@ -11,7 +11,7 @@ internal class Program
     private static void Main(string[] args)
     {
         // fetch program bytes
-        var filePath = @"G:\My Drive\EmuDev\Programs\cpudiag.bin";
+        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "cpudiag.bin");
         var progBytes = File.ReadAllBytes(filePath);
 
         // load program into guest memory

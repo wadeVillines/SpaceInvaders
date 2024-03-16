@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Intel8080\Intel8080.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="cpudiag.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
