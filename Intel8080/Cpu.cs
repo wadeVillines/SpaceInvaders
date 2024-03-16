@@ -1556,7 +1556,7 @@ namespace Intel8080
         private void SUB(byte operand, bool withBorrow = false)
         {
             if (withBorrow && Flags.Carry)
-                operand -= 1;
+                operand += 1;
 
             var result = A - operand;
 
